@@ -1,30 +1,17 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-  self:
-    path: config
-manifest:
-  remotes:
     # zmk official
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mkhzmc #new entry
-      url-base: https://github.com/mkhzmc #new entry
+    - name: dsifry #new entry
+      url-base: https://github.com/dsifry #new entry
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: nice-view-bongocat #new entry
-      remote: mkhzmc #new entry
+    - name: nice-view-mod #new entry
+      remote: dsifry #new entry
       revision: main #new entry
   self:
     path: config
