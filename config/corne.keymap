@@ -51,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL        &mmv MOVE_UP    &kp HASH         &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK       &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp AT_SIGN     &trans       &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT  &kp BSLH  &kp DOUBLE_QUOTES
-&kp LSHFT  &mkp LCLK       &mkp RCLK       &msc SCRL_UP     &msc SCRL_DOWN  &trans       &kp UNDER  &kp PLUS   &kp LEFT_BRACE  &kp RBRC  &kp PIPE  &kp ESC
-                                           &kp LGUI         &trans          &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TILDE  &kp EXCL        &mmv MOVE_UP    &kp HASH         &kp DLLR        &kp PRCNT           &kp CARET  &kp AMPS   &kp ASTRK       &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp AT_SIGN     &kp SINGLE_QUOTE    &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT  &kp BSLH  &kp LS(DOUBLE_QUOTES)
+&kp LSHFT  &mkp LCLK       &mkp RCLK       &msc SCRL_UP     &msc SCRL_DOWN  &trans              &kp UNDER  &kp PLUS   &kp LEFT_BRACE  &kp RBRC  &kp PIPE  &kp ESC
+                                           &kp LGUI         &trans          &kp SPACE           &kp RET    &trans     &kp RALT
             >;
         };
     };
