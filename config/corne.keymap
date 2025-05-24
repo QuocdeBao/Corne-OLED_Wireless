@@ -21,9 +21,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O             &kp P     &kp BSPC
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K          &kp L             &kp SEMI  &kp DOT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp LESS_THAN  &kp GREATER_THAN  &kp FSLH  &kp ESC
+&kp ESCAPE        &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp LS(SINGLE_QUOTE)
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp TAB
                                 &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
@@ -36,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB     &trans          &mmv MOVE_UP    &trans           &trans        &trans            &kp N7        &kp N8        &kp N9        &trans          &kp UP_ARROW    &kp BSPC
+&bt BT_CLR  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK     &mkp RCLK         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LSHFT   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &msc SCRL_UP  &msc SCRL_DOWN    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &trans          &trans
+                                            &kp LGUI         &trans        &kp SPACE         &kp RET       &kp N0        &kp RALT
             >;
         };
 
@@ -51,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL        &mmv MOVE_UP    &kp HASH         &kp DLLR        &kp PRCNT           &kp CARET  &kp AMPS   &kp ASTRK       &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp AT_SIGN     &kp SINGLE_QUOTE    &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT  &kp BSLH  &kp LS(DOUBLE_QUOTES)
-&kp LSHFT  &mkp LCLK       &mkp RCLK       &msc SCRL_UP     &msc SCRL_DOWN  &kp COMMA           &kp UNDER  &kp PLUS   &kp LEFT_BRACE  &kp RBRC  &kp PIPE  &kp ESC
-                                           &kp LGUI         &trans          &kp SPACE           &kp RET    &trans     &kp RALT
+&kp TILDE       &kp EXCL   &kp AT_SIGN  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK       &kp LPAR  &kp RPAR  &kp BSPC
+&kp APOSTROPHE  &kp MINUS  &kp EQUAL    &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT  &kp BSLH  &kp LS(DOUBLE_QUOTES)
+&kp LSHFT       &kp UNDER  &kp PLUS     &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LEFT_BRACE  &kp RBRC  &kp PIPE  &kp ESC
+                                        &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
     };
